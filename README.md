@@ -1,6 +1,6 @@
 # EVE Platform Tour
 
-In this folder we find the material for **"Building Agentic Earth Intelligence: A Hands-On Tour of the EVE Platform and Tool Ecosystem"**.
+This folder contains the material for **"Building Agentic Earth Intelligence: A Hands-On Tour of the EVE Platform and Tool Ecosystem"**.
 
 The main resource is `Agentic_EVE.ipynb`. Through it we explore how to move from a plain LLM workflow to a fully agentic Earth Observation workflow, wrapping real geospatial APIs as tools, exposing them via MCP, and driving them through EVE's agentic reasoning loop.
 
@@ -37,16 +37,29 @@ The main resource is `Agentic_EVE.ipynb`. Through it we explore how to move from
 ## Environment Setup
 
 ### Access Colab
-Colab is a free platform that can be used to easily run python notebooks, we suggest to run the notebook into Colab to have a easy and smooth experience:
+Colab is a free platform that can be used to easily run Python notebooks. We suggest running the notebook on Colab for an easy and smooth experience:
 
-1. Open the Colab app [here](https://colab.research.google.com/):
-2. Login/Signup 
-<img src="./images/colab_login.png", style="max-width: 700px">
-3. Download the notebook from github
+1. Open Colab [here](https://colab.research.google.com/).
+2. Log in or sign up.
 
-To run the notebook uploa
+<img src="./images/colab_login.png" width="700">
 
-Create a local `.env` file (same directory as the notebook) with the provided credential:
+3. Download the notebook from GitHub.
+
+<img src="./images/download_notebook_1.png" width="700">
+
+<img src="./images/download_notebook_2.png" width="700">
+
+4. Upload the notebook to Colab.
+
+<img src="./images/upload_colab.png" width="700">
+
+5. Create a local `.env` file (in the same directory as the notebook).
+
+<img src="./images/create_env.png" width="700">
+
+6. Double-click on the `.env` file; a sidebar will open on the right.
+7. Copy and paste the provided credentials:
 
 ```env
 BASE_URL=https://<your-eve-platform-base-url>
@@ -54,28 +67,22 @@ EMAIL=<your-account-email>
 PASSWORD=<your-account-password>
 ```
 
-> Keep credentials private. Do not commit `.env` files.
+8. Save with `Ctrl+S` (or `Cmd+S` on macOS).
 
-The notebook uses these packages (install once with the commented `%pip` cell):
-
-- `python-dotenv`
-- `httpx`
-- `geopy`
-- `requests`
-- `fastmcp`
+<img src="./images/create_env_2.png" width="700">
 
 ## Run the Notebook
 
 1. Open `Agentic_EVE.ipynb`.
 2. Run the **Setup** cells first (dependency install + `.env` loading).
 3. Execute sections in order:
-  - **EVE platform tour**: REST API walk-through (retrieve, RAG, hallucination detection)
-  - **From LLMs to Agents**: core concepts, ReAct loop
-    - **Part I**: From services to tools (Nominatim geocode/reverse-geocode)
-    - **Part II**: Model Context Protocol: build and serve an MCP server with FastMCP
-    - **Part III**: EVE's Tool Registry: discover, authenticate, and call community MCP servers
-    - **Part IV**: Agentic EVE: invoke the LangGraph-based agent and inspect traces
-4. Review the trace visualisations to understand model-to-tool orchestration.
+   - **EVE platform tour**: REST API walk-through (retrieve, RAG, hallucination detection)
+   - **From LLMs to Agents**: core concepts, ReAct loop
+     - **Part I**: From services to tools (Nominatim geocode/reverse-geocode)
+     - **Part II**: Model Context Protocol: build and serve an MCP server with FastMCP
+     - **Part III**: EVE's Tool Registry: discover, authenticate, and call community MCP servers
+     - **Part IV**: Agentic EVE: invoke the LangGraph-based agent and inspect traces
+4. Review the trace visualizations to understand model-to-tool orchestration.
 
 ## Troubleshooting
 
