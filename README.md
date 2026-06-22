@@ -16,14 +16,12 @@ The main resource is `Agentic_EVE.ipynb`. Through it we explore how to move from
 ## Resources
 
 - `Agentic_EVE.ipynb`: end-to-end tutorial notebook
-- `Agentic_EVE_presentation.pdf`: slide deck accompanying this session
 
 ## Folder Contents
 
 ```
 .
 ├── Agentic_EVE.ipynb               # hands-on tutorial
-├── Agentic_EVE_presentation.pdf    # session slide deck
 ├── images/                         # figures used in the notebook
 └── .env                            # local credentials (not committed)
 ```
@@ -42,25 +40,11 @@ Colab is a free platform that can be used to easily run Python notebooks. We sug
 
 1. Open Colab [here](https://colab.research.google.com/).
 2. Log in or sign up.
-
-
-
-1. Download the notebook from GitHub.
-
-
-
-
-
-1. Upload the notebook to Colab.
-
-
-
-1. Create a local `.env` file (in the same directory as the notebook).
-
-
-
-1. Double-click on the `.env` file; a sidebar will open on the right.
-2. Copy and paste the provided credentials:
+3. Download the notebook from GitHub.
+4. Upload the notebook to Colab.
+5. Create a local `.env` file (in the same directory as the notebook).
+6. Double-click on the `.env` file; a sidebar will open on the right.
+7. Copy and paste the provided credentials:
 
 ```env
 BASE_URL=https://<your-eve-platform-base-url>
@@ -69,8 +53,6 @@ PASSWORD=<your-account-password>
 ```
 
 1. Save with `Ctrl+S` (or `Cmd+S` on macOS).
-
-
 
 ## Run the Notebook
 
