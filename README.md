@@ -16,14 +16,12 @@ The main resource is `Agentic_EVE.ipynb`. Through it we explore how to move from
 ## Resources
 
 - `Agentic_EVE.ipynb`: end-to-end tutorial notebook
-- `Agentic_EVE_presentation.pdf`: slide deck accompanying this session
 
 ## Folder Contents
 
 ```
 .
 ├── Agentic_EVE.ipynb               # hands-on tutorial
-├── Agentic_EVE_presentation.pdf    # session slide deck
 ├── images/                         # figures used in the notebook
 └── .env                            # local credentials (not committed)
 ```
