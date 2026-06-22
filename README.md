@@ -37,29 +37,30 @@ The main resource is `Agentic_EVE.ipynb`. Through it we explore how to move from
 ## Environment Setup
 
 ### Access Colab
+
 Colab is a free platform that can be used to easily run Python notebooks. We suggest running the notebook on Colab for an easy and smooth experience:
 
 1. Open Colab [here](https://colab.research.google.com/).
 2. Log in or sign up.
 
-<img src="./images/colab_login.png" width="700">
 
-3. Download the notebook from GitHub.
 
-<img src="./images/download_notebook_1.png" width="700">
+1. Download the notebook from GitHub.
 
-<img src="./images/download_notebook_2.png" width="700">
 
-4. Upload the notebook to Colab.
 
-<img src="./images/upload_colab.png" width="700">
 
-5. Create a local `.env` file (in the same directory as the notebook).
 
-<img src="./images/create_env.png" width="700">
+1. Upload the notebook to Colab.
 
-6. Double-click on the `.env` file; a sidebar will open on the right.
-7. Copy and paste the provided credentials:
+
+
+1. Create a local `.env` file (in the same directory as the notebook).
+
+
+
+1. Double-click on the `.env` file; a sidebar will open on the right.
+2. Copy and paste the provided credentials:
 
 ```env
 BASE_URL=https://<your-eve-platform-base-url>
@@ -67,21 +68,21 @@ EMAIL=<your-account-email>
 PASSWORD=<your-account-password>
 ```
 
-8. Save with `Ctrl+S` (or `Cmd+S` on macOS).
+1. Save with `Ctrl+S` (or `Cmd+S` on macOS).
 
-<img src="./images/create_env_2.png" width="700">
+
 
 ## Run the Notebook
 
 1. Open `Agentic_EVE.ipynb`.
 2. Run the **Setup** cells first (dependency install + `.env` loading).
 3. Execute sections in order:
-   - **EVE platform tour**: REST API walk-through (retrieve, RAG, hallucination detection)
-   - **From LLMs to Agents**: core concepts, ReAct loop
-     - **Part I**: From services to tools (Nominatim geocode/reverse-geocode)
-     - **Part II**: Model Context Protocol: build and serve an MCP server with FastMCP
-     - **Part III**: EVE's Tool Registry: discover, authenticate, and call community MCP servers
-     - **Part IV**: Agentic EVE: invoke the LangGraph-based agent and inspect traces
+  - **EVE platform tour**: REST API walk-through (retrieve, RAG, hallucination detection)
+  - **From LLMs to Agents**: core concepts, ReAct loop
+    - **Part I**: From services to tools (Nominatim geocode/reverse-geocode)
+    - **Part II**: Model Context Protocol: build and serve an MCP server with FastMCP
+    - **Part III**: EVE's Tool Registry: discover, authenticate, and call community MCP servers
+    - **Part IV**: Agentic EVE: invoke the LangGraph-based agent and inspect traces
 4. Review the trace visualizations to understand model-to-tool orchestration.
 
 ## Troubleshooting
